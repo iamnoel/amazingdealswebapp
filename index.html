@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- Responsive meta/viewport tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Project 4 - Awesome Deals!</title>
+    
+    <!-- I added Boostrap to this project -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- The stylesheet I've made to fine-tune the project-specific features, I borrowoed some of the styling you showed us from week 11's form validation -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="mt-3">Noel's Amazing Deals List</h1>
+            <p>Please provide us with some personal details to be given access to our amazing list of deals!</p>
+        </header>
+        <main>
+                <!-- The Form to be validated with the Constraint Validation API-->
+                <form novalidate>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+
+                            <span id="name_error" class="error" aria-live="polite"></span>
+                            <input type="text" placeholder="Name" class="form-control user-input-box uname" required>
+                            
+                            <span id="email_error" class="error" aria-live="polite"></span>
+                            <input type="email" id="mail" placeholder="Email" class="form-control user-input-box uemail mail" required>
+                            
+                            <span id="age_error" class="error" aria-live="polite"></span>
+                            <input type="number" placeholder="Age" min="1" max="120" class="form-control user-input-box uage" required>
+                            
+                            <span id="loc_error" class="error" aria-live="polite"></span>
+                            <input type="text" placeholder="Location" class="form-control user-input-box ulocation" required>   
+                            
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <button class="btn btn-primary btn-add">View Deals!</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+        
+                <ul class="list hidden">
+                    <!-- All of the deal items will be listed here once the form details are validated ^_^ -->
+                    <section>
+                    </section>
+                </ul>
+
+                <!-- A little something fun to go above and beyond :3 -->
+                <div class="support">
+                    <p>Please also consider supporting us by watching our favourite YouTube video!</p>
+                    <button class="btn btn-primary support-btn">Support us!!</button>
+                    <div id="cats" class="hidden">
+                        <iframe width="790" height="512" src="https://www.youtube.com/embed/PK2939Jji3M" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+        </main>
+        <footer>
+            <p>We are located at Georgian College (1 Georgian Drive) in beautiful Barrie, Ontario.</p>
+            <!-- Google Maps API -->
+            <div id="map"></div>
+            <p>Copyright &copy; Noel Ward 2019. All rights reserved.</p>
+        </footer>
+    </div>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA77R6bSWBmhf-wX2hKBmqwCy2AkRy9tzM&callback=initMap">
+    </script>
+</body>
+</html>

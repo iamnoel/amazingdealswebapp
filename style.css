@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+body {
+  background-color: #BADA55; 
+  color: #fff; 
+}
+
+body .list {
+  margin-top: 2em;
+  list-style: none;
+}
+
+form {
+  width: 80%; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+.form-control {
+  margin-bottom: 1em;
+}
+
+h1 {
+  text-align: center; 
+  padding: 1em 0;
+}
+
+p {
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+footer {
+  margin-top: 1em; 
+  text-align: center; 
+}
+
+
+
+
+
+/* form stuff */
+
+input[type='email'] {
+  width: 100% !important; 
+}
+
+input.mail {
+  border: 0px solid #fff;
+}
+
+/* This is our style for the invalid fields */
+input.invalid{
+  border: 2px solid;
+  border-radius: 0px 5px 5px 5px;
+  border-color: #900;
+  background-color: #FDD;
+}
+
+input:focus.invalid {
+  outline: none;
+}
+
+/* This is the style of our error messages */
+.error {
+  width  : 100%;
+  padding: 0;
+ 
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 5px 5px 0px 0px;
+ 
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.3em;
+}
+
+/* this will hide our elements */
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+
+/* section styles */
+section {
+  display: flex;
+  align-content: center;
+	/* justify-content: space-between; */
+	margin-bottom: 5rem;
+}
+section article {
+	border: 1px solid black;
+  box-shadow: 0 2px 14px grey;
+  background: white;
+	padding: 2.5%;
+  width: 25%;
+  margin-left: 2%;
+  margin-right: 2%;
+  color: black;
+  text-align: left;
+}
+article img {
+	display: block;
+	height: 150px;
+	width: 90px;
+}
+section p {
+  margin: 0px 0;
+  text-align: left;
+}
+
+section ul {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#map {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 400px;
+  background-color: grey;
+}
+
+.support {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.support-button {
+  float: center;
+  text-align: center;
+}

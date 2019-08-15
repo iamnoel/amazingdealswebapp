@@ -1,0 +1,38 @@
+{
+	"amazingProducts": [
+	  {
+		"name": "Dancing with Cats",
+		"price": "$13.22",
+		"description": "This is a book about dancing with cats.",
+		"features": [
+			"Hardcover: 96 Pages",
+			"Inspiring photographs",
+			"Testimonies of personal transformations"
+		],
+		"image": "dancing-with-cats.jpg"
+	  },
+	  {
+		"name": "Dog wig",
+		"price": "$9.57",
+		"description": "This is a luxurious dog wig.",
+		"features": [
+			"High ponytail on top",
+			"Great for parties",
+			"Also fits babies"
+		],
+		"image": "small-dog-wig.jpg"
+	  },
+	  {
+		"name": "Cat Horn",
+		"price": "$6.02",
+		"description": "This is an incredible inflatable unicorn horn for your cat!",
+		"features": [
+			"High-quality vinyl",
+			"Four-point elastic strap",
+			"Makes your cat extraordinary"
+		],
+		"image": "inflatable-cat-horn.jpg"
+	  }
+	]
+  }
+  
